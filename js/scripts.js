@@ -1,5 +1,6 @@
 $(document).ready(function($) {
     "use strict";
+	
 
     $(window).scroll(function () {
         if ($(document).scrollTop() > 10) {
