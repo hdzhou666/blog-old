@@ -17,7 +17,7 @@
 <!--<![endif]--> 
 
 <head>
-  <title>Archives: 2018/6 | 老板我要两份黄焖鸡</title>
+  <title>test | 老板我要两份黄焖鸡</title>
   
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
@@ -73,9 +73,7 @@
 
 
 <!--
-
-<body class="home-template">
-
+<body class="post-template">
 -->
 <body id="index" class="lightnav animsition">
       <!-- ============================ Off-canvas navigation =========================== -->
@@ -238,48 +236,108 @@
 <!-- // End height spacing helper -->
 
 <!-- ============================ END Hero Image =========================== -->
+<section id="intro">
+    <div class="container">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+                <h1>test</h1>
+            </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+            <audio autoplay="autoplay" id="music" loop="loop" controls="controls" style="position: absolute; top: -9999px;"><br>    <source src="https://static.tohours.com/zezeze/bgm.mp3" type="audio/mp3"></audio>
 
+<p>先随便放几张照片充数</p>
+<p><img src="https://static.tohours.com/zezeze/test1.jpg" alt=""></p>
+<p>再放一张吧</p>
+<p><img src="https://static.tohours.com/zezeze/test2.jpg" alt=""></p>
+<p>最后一张</p>
+<p><img src="https://static.tohours.com/zezeze/test3.jpg" alt=""></p>
+<p>完美~~</p>
+<p></p><h1>nginx+tomcat负载均衡</h1><p></p>
+<h3>1.配置两个不同端口的tomcat</h3>
 
+<h3>2.配置nginx—-con/conf文件</h3>
 
+<p>upstream localhost{ #集群　　localhost</p>
+<p>#所有的服务器都配置在一个集群内，由后面的location统一配置。</p>
+<p>#ip_hash;<br>server localhost:8080 weight=1; #授权越重，访问概率越高。<br>server localhost:9080 weight=2;</p>
+<p>#server localhost:10080 weight=3;<br>}</p>
+<p>server {<br>listen 80;<br>server_name localhost;</p>
+<p>location / {<br>proxy_connect_timeout 3; #nginx跟后端服务器连接超时时间(代理连接超时)<br>proxy_send_timeout 30; #后端服务器数据回传时间(代理发送超时)<br>proxy_read_timeout 30; #连接成功后，后端服务器响应时间(代理接收超时)<br>proxy_pass <a href="http://localhost" target="_blank" rel="noopener">http://localhost</a>;    #集群处理</p>
+<p>}</p>
+<h3>3.测试：</h3>
 
-<section id="services">
+<p>需要先分别测试两个tomcat是否能运行；</p>
+<p>配置完nginx后要确认文件正确性；</p>
+<p>启动nginx和tomcat即可。</p>
+
+            <div class="clearfix"></div>
+        </div>
+        
+    </div>
+</section>
+<section id="process">
     <div class="container">
         <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="row boxes">
+            <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
+                <div class="timeline-centered">
+                    <div class="line"></div>
+                    <div class="present">Past</div>
+                    <div class="dot_tp"></div>
+                    <div class="born">Now</div>
+                    <div class="dot_bt"></div>
                     
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2018/06/04/test/">test</a></h4>
-                            
-                            <p><time datetime="2018-06-04T12:06:07.000Z"><a href="/2018/06/04/test/">2018-06-04</a></time></p>
+                        <div class="timeline-entry">
+                            <div class="timeline-entry-inner">
+                                <div class="timeline-icon wow fadeInUp" data-wow-delay="0.2s">
+                                    <span class="number">1</span>
+                                </div>
+                                <div class="timeline-label wow fadeInUp" data-wow-delay="0.2s">
+                                    <p>不要为了省钱买16G的手机</p>
+                                </div>
+                            </div>
                         </div>
                     
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2018/06/04/hello-world/">Hello World</a></h4>
-                            
-                            <p><time datetime="2018-06-04T04:42:58.434Z"><a href="/2018/06/04/hello-world/">2018-06-04</a></time></p>
+                        <div class="timeline-entry">
+                            <div class="timeline-entry-inner">
+                                <div class="timeline-icon wow fadeInUp" data-wow-delay="0.2s">
+                                    <span class="number">2</span>
+                                </div>
+                                <div class="timeline-label wow fadeInUp" data-wow-delay="0.2s">
+                                    <p>千万不要在晚上做任何决定</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="timeline-entry">
+                            <div class="timeline-entry-inner">
+                                <div class="timeline-icon wow fadeInUp" data-wow-delay="0.2s">
+                                    <span class="number">3</span>
+                                </div>
+                                <div class="timeline-label wow fadeInUp" data-wow-delay="0.2s">
+                                    <p>你必须很努力 才能看上去毫不费力</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="timeline-entry">
+                            <div class="timeline-entry-inner">
+                                <div class="timeline-icon wow fadeInUp" data-wow-delay="0.2s">
+                                    <span class="number">4</span>
+                                </div>
+                                <div class="timeline-label wow fadeInUp" data-wow-delay="0.2s">
+                                    <p>记住上面一条</p>
+                                </div>
+                            </div>
                         </div>
                     
                 </div>
-            </div>    
-        </div>
-    </div>
-</section> 
-
-<section id="statement">
-    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
-        <div class="row">
-            <p>不必仰望别人，自己亦是风景。</p>
+                <!-- timeline-centered -->
+            </div>
         </div>
     </div>
 </section>
+
       
 <!-- ============================ Footer =========================== -->
 
